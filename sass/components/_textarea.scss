@@ -1,0 +1,35 @@
+.textarea-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+}
+.textarea-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  margin-left: 40px;
+  display: block;
+  text-align: start;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-top: 10px;
+}
+.textarea-window {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  padding: 15px 16px;
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.textarea-window:hover,
+.textarea-window:focus {
+  border-color: var(--main-color);
+  outline: var(--main-color);
+}

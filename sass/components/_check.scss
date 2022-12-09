@@ -1,0 +1,49 @@
+.check__input {
+  opacity: 0;
+}
+.check__input:checked {
+  outline: 0;
+}
+.check__option {
+  margin-top: 30px;
+}
+.check__option .blue-checkbox-text {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.check__option .check-box {
+  width: 16px;
+  height: 15px;
+  fill: #ffffff;
+  background-color: #ffffff;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  top: 2px;
+  position: relative;
+}
+.check__input:checked + span svg {
+  background-color: #2196f3;
+  border: 2px solid #2196f3;
+  opacity: 1;
+  fill: #ffffff;
+  top: 2px;
+  transition: border 0.05s fill 0.05s background-color 0.05s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-button-submit {
+  background-color: var(--main-color);
+  font-size: 16px;
+  color: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 76px 10px 76px;
+  cursor: pointer;
+  font-family: inherit;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
