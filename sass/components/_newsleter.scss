@@ -1,5 +1,4 @@
 .singup {
-  margin-left: 70px;
   display: inline-block;
 }
 .singup-form {
@@ -33,7 +32,7 @@
   }
 }
 .singup-input {
-  width: 358px;
+  width: 100%;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -79,4 +78,14 @@
 }
 .news-icon {
   fill: var(--fourth-color);
+}
+.singup-label {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }

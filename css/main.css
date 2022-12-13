@@ -92,6 +92,9 @@ li:hover p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header__nav {
   text-decoration: none;
@@ -113,6 +116,8 @@ li:hover p {
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .header__studioname {
@@ -284,8 +289,8 @@ li:hover p {
 
 .section-grey {
   background: var(--seventh-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile.header/Header img1x.png");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile.header/Header img1x.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/mobile.header/Header img1x.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/mobile.header/Header img1x.png");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -294,19 +299,19 @@ li:hover p {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .section-grey {
-    background-image: url(/images/BackgroundIndex.jpg);
+    background-image: url("./images/BackgroundIndex.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .section-grey {
-    background-image: url("/images/tablet.header/Header img1x.png");
+    background-image: url("./images/tablet.header/Header img1x.png");
   }
 }
 @media screen and (min-width: 1200px) {
   .section-grey {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("/images/BackgroundIndex.jpg");
+    background-image: url("./images/BackgroundIndex.jpg");
     height: 600px;
   }
 }
@@ -1083,7 +1088,6 @@ clients__svg {
 }
 
 .singup {
-  margin-left: 70px;
   display: inline-block;
 }
 
@@ -1141,7 +1145,7 @@ clients__svg {
 }
 
 .singup-input {
-  width: 358px;
+  width: 100%;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1196,6 +1200,25 @@ clients__svg {
 
 .news-icon {
   fill: var(--fourth-color);
+}
+
+.singup-label {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .singup-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .singup-label {
+    width: 358px;
+  }
 }
 
 .modal-button__main {
@@ -1423,7 +1446,13 @@ clients__svg {
 }
 
 .nav-mobile-container {
-  margin-top: 302px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .mobile-tel {
