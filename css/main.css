@@ -748,6 +748,16 @@ clients__svg {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__inner {
     display: inline-block;
@@ -938,6 +948,17 @@ footer__container {
   line-height: 16px;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .joinus__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 50px;
+  }
 }
 
 .joinus__list {
