@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-self: unset;
+    justify-content: center;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -52,9 +53,13 @@
 .lorem__text {
   margin-top: 10px;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   font-size: 14px;
   line-height: 1.71;
   color: var(--third-color);
   justify-content: center;
+}
+.lorem-list-all {
+  width: 100%;
+  flex-basis: calc((100% - 30px) / 2);
 }
