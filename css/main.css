@@ -4,6 +4,7 @@
 }
 
 .container {
+  max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -856,25 +857,19 @@ clients__svg {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 1200px) {
-  .footer__inner {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
 
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (min-width: 768px) {
-  footer__container {
+  .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 50px;
     visibility: unset;
-    width: 100%;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -882,6 +877,20 @@ clients__svg {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1112,29 +1121,23 @@ clients__svg {
   width: 100%;
 }
 
-.singup-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 @media screen and (min-width: 1200px) {
   .singup-form {
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1283,8 +1286,8 @@ clients__svg {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 100%;
   left: 50%;
   right: 50%;
   top: 50%;
@@ -1302,6 +1305,21 @@ clients__svg {
   -webkit-transition-timing-function: cubic-bezier(0.71, 1.51, 0.4, 2);
           transition-timing-function: cubic-bezier(0.71, 1.51, 0.4, 2);
 }
+@media screen and (max-width: 1199x) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 609px;
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .modal__close {
   position: absolute;
@@ -1315,10 +1333,8 @@ clients__svg {
   border-radius: 50px;
 }
 
-.modal-vector__button svg {
+.modal-vector__button {
   position: absolute;
-  top: 2px;
-  right: 2px;
 }
 
 .modal-tittle {
@@ -1344,7 +1360,7 @@ clients__svg {
 
 .modal-svg {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 55px;
 }
 
