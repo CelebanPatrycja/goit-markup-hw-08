@@ -883,9 +883,6 @@ clients__svg {
   .footer__container {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1145,9 +1142,6 @@ clients__svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -1166,6 +1160,10 @@ clients__svg {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    display: block;
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
 
@@ -1203,6 +1201,7 @@ clients__svg {
 }
 @media screen and (min-width: 1200px) {
   .singup-button {
+    margin-top: 0px;
     margin-left: 12px;
   }
 }
@@ -1245,6 +1244,12 @@ clients__svg {
   .singup-label {
     width: 358px;
   }
+}
+
+.singup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-button__main {

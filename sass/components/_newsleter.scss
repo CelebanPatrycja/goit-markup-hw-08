@@ -13,7 +13,6 @@
 }
 .singup-text {
   display: flex;
-  justify-content: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -29,6 +28,10 @@
 
   @media screen and (min-width: 1200px) {
     justify-content: left;
+    display: block;
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
 .singup-input {
@@ -61,6 +64,7 @@
   border: none;
 
   @media screen and (min-width: 1200px) {
+    margin-top: 0px;
     margin-left: 12px;
   }
 }
@@ -89,4 +93,7 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
+}
+.singup-container {
+  display: flex;
 }
