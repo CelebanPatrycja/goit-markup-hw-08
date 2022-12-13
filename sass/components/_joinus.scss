@@ -1,47 +1,19 @@
 .joinus {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0px;
-  @media screen and (min-width: 768px) {
-    width: 50%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: unset;
-    display: flex;
-    padding: 0px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-  }
+  margin-left: 70px;
+  display: inline-block;
 }
 
 .joinus__list {
   display: flex;
 }
 .joinus__text {
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 20px;
   color: var(--fourth-color);
-  margin-top: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
-  }
-  @media screen and (min-width: 1200px) {
-  }
+  font-weight: 700px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
-
 .joinus__list {
   display: flex;
   align-items: center;

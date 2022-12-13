@@ -1,41 +1,23 @@
 .singup {
-  display: inline-block;
-  width: 100%;
+  margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
 }
 .singup-form {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-  }
+  margin-left: auto;
 }
 .singup-text {
-  display: flex;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 20px;
-  padding: 0px;
-  color: #fff;
-  text-align: center;
+  display: block;
+  color: var(--fourth-color);
 
-  @media screen and (min-width: 1200px) {
-    justify-content: left;
-    display: block;
-    color: var(--fourth-color);
-    margin-bottom: 20px;
-    text-align: left;
-  }
+  margin-bottom: 20px;
 }
 .singup-input {
-  width: 100%;
+  width: px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -46,7 +28,7 @@
   color: var(--fourth-color);
 }
 .singup-button {
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
   background-color: var(--main-color);
   border-radius: 4px;
@@ -62,11 +44,7 @@
   line-height: 30px;
   cursor: pointer;
   border: none;
-
-  @media screen and (min-width: 1200px) {
-    margin-top: 0px;
-    margin-left: 12px;
-  }
+  margin-left: 12px;
 }
 .singup-button:hover,
 .singup-button:focus {
@@ -82,18 +60,4 @@
 }
 .news-icon {
   fill: var(--fourth-color);
-}
-.singup-label {
-  width: 100%;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    max-width: 450px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
-}
-.singup-container {
-  display: flex;
 }
