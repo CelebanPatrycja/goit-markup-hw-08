@@ -1,15 +1,15 @@
 .lorem {
   display: flex;
   line-height: 1.14;
-  justify-content: center;
-  gap: 30px;
 }
 .lorem-list {
   margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-self: unset;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -22,6 +22,8 @@
     background-color: #f5f4fa;
     height: 120px;
     border-radius: 4px;
+    flex-basis: calc((100% - 30px) / 2);
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {

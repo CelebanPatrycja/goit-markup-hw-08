@@ -2,14 +2,13 @@
   display: inline-block;
 }
 .singup-form {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-
+  margin-top: 60px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+  }
   @media screen and (min-width: 1200px) {
-    flex-direction: unset;
+    width: auto;
+    margin-top: 0;
   }
 }
 .singup-text {
@@ -23,7 +22,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 20px;
   padding: 0px;
   color: #fff;
 
